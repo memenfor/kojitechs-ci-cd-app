@@ -1,1 +1,7 @@
-# kojitechs-ci-cd-app
+# kojitechs containerized pipeline
+
+
+# make changes: 
+```
+/src/main/webapp/WEB-INF/jsp/welcome.jsp
+```
