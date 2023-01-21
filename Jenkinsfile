@@ -22,5 +22,10 @@ pipeline {
                 echo 'mvn sonar:sonar'
             }
         }
+        stage('Waiting for quality Gate Result') {
+            steps {
+                echo 'timeout:3 unit 3 && return say ok else abort'
+            }
+        }
     }
 }
