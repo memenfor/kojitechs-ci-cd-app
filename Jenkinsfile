@@ -36,7 +36,7 @@ pipeline {
                }
             }
         }
-        stage('Docker Build Image1') {
+        stage('Docker Build Image') {
             steps {      
                 sh"""
                     pwd && ls -al
