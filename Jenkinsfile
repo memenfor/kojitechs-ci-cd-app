@@ -12,7 +12,7 @@ pipeline {
           choice(name: 'ACTION', choices: ['RELEASE', 'RELEASE', 'NO'], description: 'Select action, BECAREFUL IF YOU SELECT DESTROY TO PROD')
     } 
   environment {
-          tag = sh(returnStdout:  true, script: "git rev-parse --short=10 HEAD").trim()
+          tag = sh(returnStdout: true, script: "git rev-parse --short=10 HEAD").trim()
     }  
     stages {
         stage('mvn Compile and Build') {
